@@ -17,20 +17,20 @@
     <main>
         <section id="descrição" class="categoria">
             <h2>Adicionar Gasto</h2>
-            <form id="gastos-formulario">
-            <input type="text" id="descrição" placeholder="Descrição dos seus gastos" required>
-            <input type="number" id="valor" placeholder="Valor do gasto" required step="0.01">
-            <select id="categoria" required>
-                <option value="">Selecione a categoria</option>
-                <option value="Mantimentos">Mantimentos</option>
-                <option value="Alimentação não Essencial">Alimentação não Essencial</option>
-                <option value="Transporte">Transporte</option>
-                <option value="Lazer">Lazer</option>
-                <option value="Saúde">Saúde</option>
-                <option value="Outros">Outros</option>
-            </select>
-            <button type="submit">Adicionar ao seus gastos</button>
-        </form>
+            <form id="gastos-form">
+                <input type="text" id="descrição" placeholder="Descrição dos seus gastos" required>
+                <input type="number" id="valor" placeholder="Valor do gasto" required step="0.01">
+                 <select id="categoria" required>
+                    <option value="">Selecione a categoria</option>
+                    <option value="Mantimentos">Mantimentos</option>
+                    <option value="Alimentação não Essencial">Alimentação não Essencial</option>
+                    <option value="Transporte">Transporte</option>
+                    <option value="Lazer">Lazer</option>
+                    <option value="Saúde">Saúde</option>
+                    <option value="Outros">Outros</option>
+                 </select>
+                <button type="submit">Adicionar ao seus gastos</button>
+            </form>
     </select>
     <h2>Listagem dos seus Gastos</h2>
     <table id="tabela-dos-gastos">
@@ -44,6 +44,7 @@
         </thead>
         <tbody id="lista-gastos"></tbody>
     </table>
+    <h2>Total: R$ <span id="total-gastos">0.00</span></h2>
     </main>
 </body>
 </html>
