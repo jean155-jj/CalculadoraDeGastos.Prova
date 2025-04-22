@@ -19,12 +19,19 @@
         </div>
     </header>
     <main>
-        <section id="descrição" class="categoria"></section>
-        <h2>Descrição dos Gastos</h2>
-        <div class="listagem">
-            <h3>Lanchonete da Maria Joaquina</h3>
-            <p>compra realizado no dia 25/03/2025 as 19:31pm </p>
-
+        <section id="descrição" class="categoria">
+            <h2>Adicionar Gasto</h2>
+            <form id="gastos-formulario"></form>
+            <input type="text" id="descrição" placeholder="Descrição dos seus gastos" required>
+            <input type="number" id="valor" placeholder="Valor do gasto" required step="0.01">
+            <select id="categoria" required>
+                <option value="">Selecione a categoria</option>
+                <option value="Alimentação">Alimentação</option>
+                <option value="Transporte">Transporte</option>
+                <option value="Lazer">Lazer</option>
+                <option value="Saúde">Saúde</option>
+                <option value="Outros">Outros</option>
+            </select>
         </div>
     </main>
 </body>
