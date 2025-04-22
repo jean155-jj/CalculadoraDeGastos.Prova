@@ -12,27 +12,38 @@
     <header class = "cabeçalho">
         <div class="cabeçalho-conteudo">
             <h1>Calculadora de Gastos</h1>
-            <p>Funcionalidades</p>
-            <nav>
-                <a href="#descrição">Descrição dos Gastos</a>
-            </nav>
         </div>
     </header>
     <main>
         <section id="descrição" class="categoria">
             <h2>Adicionar Gasto</h2>
-            <form id="gastos-formulario"></form>
+            <form id="gastos-formulario">
             <input type="text" id="descrição" placeholder="Descrição dos seus gastos" required>
             <input type="number" id="valor" placeholder="Valor do gasto" required step="0.01">
             <select id="categoria" required>
                 <option value="">Selecione a categoria</option>
-                <option value="Alimentação">Alimentação</option>
+                <option value="Mantimentos">Mantimentos</option>
+                <option value="Alimentação não Essencial">Alimentação não Essencial</option>
                 <option value="Transporte">Transporte</option>
                 <option value="Lazer">Lazer</option>
                 <option value="Saúde">Saúde</option>
                 <option value="Outros">Outros</option>
             </select>
-        </div>
+            <button type="submit">Adicionar ao seus gastos</button>
+        </form>
+    </select>
+    <h2>Listagem dos seus Gastos</h2>
+    <table id="tabela-dos-gastos">
+        <thead>
+            <tr>
+                <th>Descrição</th>
+                <th>Valor</th>
+                <th>Categoria</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="lista-gastos"></tbody>
+    </table>
     </main>
 </body>
 </html>
