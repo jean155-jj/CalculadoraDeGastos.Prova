@@ -1,7 +1,8 @@
 body {
-    font-family:monospace;
+    font-family: monospace;
     margin: 0;
     padding: 0;
+    
 }
 
 .cabeçalho {
@@ -9,19 +10,21 @@ body {
     color: white;
     padding: 50px;
     text-align: center;
+    border-radius: 150px;
 }
 
-main{
+main {
     padding: 80px;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-bottom: 30px;
 }
-table{
+
+table {
     width: 100%;
     border-collapse: collapse;
 }
@@ -39,10 +42,29 @@ button {
     background-color: #0a7ac5;
     color: white;
     border: none;
-    padding: 5px;
+    padding: 10px 20px;
+    border-radius: 12px;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-button:hover{
+button:hover {
     background-color: #5da0cc;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+form input, form select {
+    padding: 10px;
+    border: 2px solid #888; 
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input:focus, form select:focus {
+    border-color: #065096;
+    outline: none;
 }
