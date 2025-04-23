@@ -26,3 +26,11 @@ document.getElementById('gastos-form').addEventListener('submit', function(event
     } 
 });
 
+function atualizarTotal() {
+    const tabela = document.getElementById('lista-gastos');
+    let total = 0;
+    for (let i = 0; i < tabela.rows.length; i++) {
+        total += parseFloat(tabela.rows[i].cells[1].innerText);
+    }
+    document.getElementById('total-gastos').innerText = total.toFixed(2);
+}

@@ -1,1 +1,0 @@
-# CalculadoraDeGastos.Prova
