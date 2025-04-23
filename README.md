@@ -25,7 +25,7 @@ O arquivo HTML define a estrutura da interface do usuário da aplicação. As pr
 O arquivo CSS define a aparência visual e a formatação da página. Os estilos incluem:
 
 - **Estilos Globais**: O corpo da página tem uma fonte _monospace_ sem margem ou preenchimento.
-- **Cabeçalho**: O cabeçalho possui um fundo verde, texto branco e bordas arredondadas.
+- **Cabeçalho**: O cabeçalho possui um fundo azul, texto branco e bordas arredondadas.
 - **Formulário**: O formulário é exibido em coluna com espaçamento entre os campos.
 - **Botões**: Os botões têm uma cor de fundo que muda ao passar o mouse e são arredondados.
 
